@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
@@ -13,7 +14,7 @@
       crossorigin="anonymous"
     />
     <!-- Fim Bootstrap -->
-    <link rel="stylesheet" href="styles/css/styles.css" />
+    <link rel="stylesheet" href="{% static 'styles/css/styles.css' %}" />
     <link
       rel="shortcut icon"
       href="/public/icons/logoIcon.svg"
@@ -38,19 +39,19 @@
         </select>
         <input type="text" placeholder="Pesquise aqui..." />
         <button>
-          <img src="/public/icons/search.svg" alt="search" title="Pesquisar" />
+          <img src="{%static '/public/icons/search.svg'%}" alt="search" title="Pesquisar" />
         </button>
       </form>
       <nav>
         <ul>
           <li>
             <a href="/pages/carrinho.html"
-              ><img src="/public/icons/bag.svg" alt="sacola de compras"
+              ><img src="{%static  '/public/icons/bag.svg'%}" alt="sacola de compras"
             /></a>
           </li>
           <li>
-            <a href="/pages/login.html"
-              ><img src="/public/icons/user.svg" alt="perfil"
+            <a href="login"
+              ><img src="{%static '/public/icons/user.svg'%}" alt="perfil"
             /></a>
           </li>
         </ul>
@@ -76,7 +77,7 @@
               /></a>
             </div>
 
-            <div class="emial">
+            <div class="email">
               <h2>E-mail commercial</h2>
 
               <a href="mailto:lukao.multimarcas@lkm.com"
